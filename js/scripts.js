@@ -158,18 +158,23 @@ $(document).ready (function () {
   $(".retakeQuiz").click(function () {
     location.reload();
   });
+
   $("#learnJava").click(function () {
     window.open("https://www.java.com/en/", "_blank")
   });
+
   $("#learnPHP").click(function () {
     window.open("http://php.net/manual/en/intro-whatis.php", "_blank")
   });
+
   $("#learnRuby").click(function () {
     window.open("https://www.ruby-lang.org/en/downloads/", "_blank")
   });
+
   $("#learnCSS").click(function () {
     window.open("https://developer.mozilla.org/en-US/docs/Web/CSS", "_blank")
   });
+
   $("#learnC").click(function () {
     window.open("https://docs.microsoft.com/en-us/dotnet/csharp/csharp", "_blank")
   });
