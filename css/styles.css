@@ -1,16 +1,22 @@
+/* Hides */
 #java, #php, #ruby, #css, #c, .quiz {
   display: none;
 }
-#trackQuiz p {
-  font-weight: bold;
+#haveFun {
+  display: none;
 }
+/* General */
 body {
   font-family: 'Open Sans', sans-serif;
 }
+/* Jumbo */
 .jumbotron {
   background-color: #50E3C2;
 }
-
+/* Quiz */
+#trackQuiz p {
+  font-weight: bold;
+}
 #startQuiz {
   background-color: #c250e3;
   color: #FFFFFF;

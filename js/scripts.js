@@ -150,6 +150,8 @@ var conditional = function (q1, q2, q3, q4, q5) {
 // start quiz
 $(document).ready (function () {
   $("#startQuiz").click(function() {
+    $("#introText").hide();
+    $("#haveFun").show();
     $(".quiz").show("slow");
     $("#startQuiz").hide();
   });
