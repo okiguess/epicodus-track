@@ -12,7 +12,7 @@ _This webpage takes input from the user through radio buttons and a series and q
 
 * _Clone the repository_
 * _Open the index.html file with Google Chrome_
-* _Enjoy__
+* _Enjoy_
 
 
 ## Known Bugs
