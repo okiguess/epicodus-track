@@ -3,53 +3,44 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-      <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Which Epicodus Track Is Right for You?</title>
   </head>
   <body>
     <div class="container">
-
       <div class="jumbotron">
         <p>Which Epicodus track is right for you? Take the quiz to find out.</p>
+        <button type="button" class="btn btn-info" id="startQuiz">Okay!</button>
       </div>
-
       <div class="quiz">
-
-        <form id="track-quiz">
-
+        <form id="trackQuiz">
           <div id="question1">
-
             <p>What do you want to do with programming?</p>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question1" value="java">
                 I want to build high-performing apps.
               </label>
             </div>
-
             <div class="radio">
               <label>
-                <input type="radio" name="question2" value="php">
+                <input type="radio" name="question1" value="php">
                 I want to build back-end systems for internal use.
               </label>
             </div>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question1" value="ruby">
                 I want to build web applications.
               </label>
             </div>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question1" value="css">
                 I want to make user interfaces and websites clear and beautiful.
               </label>
             </div>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question1" value="c">
@@ -57,24 +48,20 @@
               </label>
             </div>
           </div>
-
           <div id="question2">
             <p>Do you want to work at a small, medium-size or large company?</p>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question2" value="small">
                 Small
               </label>
             </div>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question2" value="medium">
                 Medium
               </label>
             </div>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question2" value="large">
@@ -82,39 +69,32 @@
               </label>
             </div>
           </div>
-
           <div id="question3">
-
             <p>Which site or app do you admire the most?</p>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question3" value="ruby">
                 <a target="_blank" href="https://www.airbnb.com/">Airbnb</a>
               </label>
             </div>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question3" value="java">
                 <a target="_blank" href="https://www.ibm.com/design/">IBM Design</a>
               </label>
             </div>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question3" value="c">
                 <a target="_blank" href="https://www.konami.com/games/bomberman/r/us/en/">Super Bomberman R</a>
               </label>
             </div>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question3" value="php">
                 <a target="_blank" href="https://www.facebook.com">Facebook</a>
               </label>
             </div>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question3" value="css">
@@ -122,90 +102,89 @@
               </label>
             </div>
           </div>
-
           <div id="question4">
-
             <p>Are you more interested in working on front ends (user interfaces) or back ends (the stuff admins see and control)?</p>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question4" value="frontend">
                 Front ends
               </label>
             </div>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question4" value="backend">
                 Back ends
               </label>
             </div>
-
           </div>
-
           <div id="question5">
-
             <p>What level of language difficulty most appeals to you?</p>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question5" value="easy">
                 Easy
               </label>
             </div>
-
             <div class="radio">
               <label>
                 <input type="radio" name="question5" value="challenging">
                 Challenging
               </label>
             </div>
-
           </div>
-
           <button class="btn" type="submit">Go!</button>
-
         </form>
-
       </div>
       <div class="panel panel-default" id="java">
         <div class="panel-heading">Java</div>
         <div class="panel-body">
           <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.<p>
+          <div class="btn-group" role="group" aria-label="..">
+            <button type="button" class="btn btn-info retakeQuiz">Take the quiz again</button>
+            <button type="button" class="btn btn-success" id="learnJava">Learn more about Java</button>
+          </div>
         </div>
       </div>
       <div class="panel panel-default" id="php">
         <div class="panel-heading">PHP</div>
         <div class="panel-body">
           <p>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.<p>
+          <div class="btn-group" role="group" aria-label="..">
+            <button type="button" class="btn btn-info retakeQuiz">Take the quiz again</button>
+            <button type="button" class="btn btn-success" id="learnPHP">Learn more about PHP</button>
+          </div>
         </div>
       </div>
-
       <div class="panel panel-default" id="ruby">
         <div class="panel-heading">Ruby</div>
         <div class="panel-body">
           <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.<p>
+          <div class="btn-group" role="group" aria-label="..">
+            <button type="button" class="btn btn-info retakeQuiz">Take the quiz again</button>
+            <button type="button" class="btn btn-success" id="learnRuby">Learn more about Ruby</button>
+          </div>
         </div>
       </div>
-
       <div class="panel panel-default" id="css">
         <div class="panel-heading">CSS/Design</div>
         <div class="panel-body">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+          <div class="btn-group" role="group" aria-label="..">
+            <button type="button" class="btn btn-info retakeQuiz">Take the quiz again</button>
+            <button type="button" class="btn btn-success" id="learnCSS">Learn more about CSS</button>
+          </div>
         </div>
       </div>
-
       <div class="panel panel-default" id="c">
         <div class="panel-heading">C#</div>
         <div class="panel-body">
           <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.<p>
+          <div class="btn-group" role="group" aria-label="..">
+            <button type="button" class="btn btn-info retakeQuiz">Take the quiz again</button>
+            <button type="button" class="btn btn-success" id="learnC">Learn more about C#</button>
+          </div>
         </div>
       </div>
     </div>
   </body>
 </html>
-<!--Ruby/Rails
-PHP/Drupal
-Java/Android
-CSS/Design
-C#/.NET-->

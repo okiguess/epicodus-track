@@ -1,3 +1,6 @@
-#java, #php, #ruby, #css, #c {
+#java, #php, #ruby, #css, #c, .quiz {
   display: none;
+}
+#trackQuiz p {
+  font-weight: bold;
 }
