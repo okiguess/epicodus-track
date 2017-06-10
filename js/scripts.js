@@ -146,7 +146,6 @@ var conditional = function (q1, q2, q3, q4, q5) {
   }
 }
 
-
 // front end
 // start quiz
 $(document).ready (function () {
@@ -154,7 +153,7 @@ $(document).ready (function () {
     $(".quiz").show("slow");
     $("#startQuiz").hide();
   });
-//Buttons after answer reveal
+// Buttons after answer reveal
   $(".retakeQuiz").click(function () {
     location.reload();
   });

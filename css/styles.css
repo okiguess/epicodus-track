@@ -4,3 +4,26 @@
 #trackQuiz p {
   font-weight: bold;
 }
+.container {
+  font-family: 'Open Sans', sans-serif;
+}
+.jumbotron {
+  background-color: #50E3C2;
+}
+
+#startQuiz {
+  background-color: #c250e3;
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+.retakeQuiz {
+  background-color: #c250e3;
+  color: #FFFFFF;
+}
+.learnMore {
+  background-color: #50E3C2;
+}
+.submit {
+  background-color: #50E3C2;
+  margin-bottom: 15px;
+}
